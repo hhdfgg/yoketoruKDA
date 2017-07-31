@@ -7,6 +7,7 @@ public class Player2 : MonoBehaviour {
 	public Bounds MoveBounds;
 	private Rigidbody rig;
 
+
 	void OnDrawGizmos(){
 		Gizmos.DrawWireCube (MoveBounds.center, MoveBounds.size);
 	}
@@ -36,6 +37,18 @@ public class Player2 : MonoBehaviour {
 		if (Input.GetKey(KeyCode.D)){
 			transform.position += new Vector3 (MAX_SPEED * Time.deltaTime, 0f, 0f);
 		}
+
+
+
+		// newposが外に出ないように調整
+
+		transform.position =(new Vector3 (
+			Mathf.Clamp(transform.position.x, MoveBounds.min.x, MoveBounds.max.x),
+			Mathf.Clamp(transform.position.y, MoveBounds.min.y, MoveBounds.max.y),
+			transform.position.z)
+		);
+
+
 
 		/*//Debug.Log (Input.mousePosition);
 
