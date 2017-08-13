@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class MoveBall : MonoBehaviour {
+public class MoveBall2 : MonoBehaviour {
 	public Text CountText;
 
 	public float vx = -10f;
@@ -56,10 +56,10 @@ public class MoveBall : MonoBehaviour {
 			//CountText.text = "" + BallCount;
 		}
 	}
-	
+
 	// Update is called once per frame
 	void Update () {
-		
+
 	}
 
 	void OnTriggerEnter(Collider col){
@@ -68,7 +68,7 @@ public class MoveBall : MonoBehaviour {
 
 				GameManager.PlaySE (0);
 
-				GameParams.AddScore (5000);
+				GameParams.AddScore (10000);
 
 				Destroy (gameObject);
 
@@ -81,5 +81,5 @@ public class MoveBall : MonoBehaviour {
 			}
 		}
 	}
-		
+
 }

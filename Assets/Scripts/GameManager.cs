@@ -97,12 +97,9 @@ public class GameManager : MonoBehaviour {
 			NextScene = "Clear";
 			NextScene = "GameOver";
 		}
-		// Aキー
-		else if (Input.GetKey (KeyCode.A)){
-			GameParams.AddScore (50000);
-		}
 
 
+		GameParams.AddScore (50);
 
 
 		// シーン切り替え処理
