@@ -86,9 +86,9 @@ public class GameManager : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 
-		//GameParams.AddScore (1);
 
-		// Oキー
+
+		/*// Oキー
 		if (Input.GetKeyDown (KeyCode.O)) {
 			NextScene = "GameOver";
 		}
@@ -96,10 +96,10 @@ public class GameManager : MonoBehaviour {
 		else if (Input.GetKeyDown (KeyCode.C)){
 			NextScene = "Clear";
 			NextScene = "GameOver";
-		}
+		}*/
 
 
-		GameParams.AddScore (50);
+		GameParams.AddScore (-50);
 
 
 		// シーン切り替え処理

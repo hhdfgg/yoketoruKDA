@@ -21,6 +21,9 @@ public class GameParams : MonoBehaviour {
 		if (_score > 999999) {
 			_score = 999999;
 		}
+		if (_score < 0) {
+			_score = 0;
+		}
 		DrawScore ();
 	}
 

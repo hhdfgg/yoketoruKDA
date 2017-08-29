@@ -30,6 +30,9 @@ public class TitleManager : MonoBehaviour {
 			SceneManager.LoadSceneAsync ("Game");
 		}
 
+		if (Input.GetKeyDown (KeyCode.E)) {
+			SceneManager.LoadSceneAsync ("Description");
+		}
 
 
 	}
