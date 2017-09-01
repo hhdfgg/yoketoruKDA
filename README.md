@@ -30,11 +30,12 @@
  - [効果音ラボ](http://soundeffect-lab.info/)より
     - 時代劇演出１  
     - 回復魔法２  
-### ライセンス
+## ライセンス
  - アセットストアの"Query-Chan" modelからゴーストを使用したのでライセンスロゴを掲載します。  
     - [クエリちゃん公式サイト](http://query-chan.com/)より  
 ![](http://query-chan.com/wp-content/uploads/2016/08/02_%E3%82%AF%E3%82%A8%E3%83%AA%E3%81%A1%E3%82%83%E3%82%93%E3%83%A9%E3%82%A4%E3%82%BB%E3%83%B3%E3%82%B9%E3%83%AD%E3%82%B4-e1472646888241-300x256.png)  
  
+## 工夫した点
  
  
  
