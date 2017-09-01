@@ -29,10 +29,10 @@
    
 ### BGM・効果音  
  - [魔王魂](http://maoudamashii.jokersounds.com/)  
-    - タイトル　　　　[Forever Truth](http://maoudamashii.jokersounds.com/archives/song_17_forever_truth.html)  
-    - ゲーム中　　　　[空の記憶](http://maoudamashii.jokersounds.com/archives/song_18_karano_kioku.html)  
-    - クリア　　　　　[ジングル04](http://maoudamashii.jokersounds.com/archives/se_maoudamashii_jingle04.html)  
-    - ゲームオーバー　[ピアノ39](http://maoudamashii.jokersounds.com/archives/bgm_maoudamashii_piano39.html)  
+    - タイトル　　　　[Forever Truth](http://maoudamashii.jokersounds.com/archives/song_17_forever_truth.html)  
+    - ゲーム中　　　　[空の記憶](http://maoudamashii.jokersounds.com/archives/song_18_karano_kioku.html)  
+    - クリア　　　　　[ジングル04](http://maoudamashii.jokersounds.com/archives/se_maoudamashii_jingle04.html)  
+    - ゲームオーバー　[ピアノ39](http://maoudamashii.jokersounds.com/archives/bgm_maoudamashii_piano39.html)  
  - [効果音ラボ](http://soundeffect-lab.info/)  
     - 時代劇演出１  
     - 回復魔法２  
