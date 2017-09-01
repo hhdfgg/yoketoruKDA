@@ -26,7 +26,20 @@
    - [3D Voxel Cube Spaceships Sampler](http://u3d.as/w1e)  
  - 背景  
    - [Snow Mountain](http://u3d.as/a4i)  
-
+   
+### BGM・効果音  
+ - [魔王魂](http://maoudamashii.jokersounds.com/)  
+   - タイトル       [Forever Truth](http://maoudamashii.jokersounds.com/archives/song_17_forever_truth.html)  
+   - ゲーム中       [空の記憶](http://maoudamashii.jokersounds.com/archives/song_18_karano_kioku.html)  
+   - クリア         [ジングル04](http://maoudamashii.jokersounds.com/archives/se_maoudamashii_jingle04.html)  
+   - ゲームオーバー  [ピアノ39](http://maoudamashii.jokersounds.com/archives/bgm_maoudamashii_piano39.html)  
+ - [効果音ラボ](http://soundeffect-lab.info/)  
+   - 時代劇演出１  
+   - 回復魔法２  
+ 
+ 
+ 
+ 
  - 面白いことが出来た、GameシーンでPlayerを動かすと背景のアセット(3Dモデル)も動くようになった。
    なぜなら、PlayerのスクリプトにはPlayerオブジェクトをマウスの位置に置き換えるスクリプトが入っているから、
    Playerの子にすることにより、背景のアセット(3Dモデル)も一緒に動く！！！
