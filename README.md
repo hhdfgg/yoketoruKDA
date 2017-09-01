@@ -20,7 +20,7 @@
  - プレイヤー  
   - ["Query-Chan" modelのゴースト](http://u3d.as/8Bh)  
   - [Bretwalda Halloween](http://u3d.as/CfA)  
-   - 音符  
+ - 音符  
   - [The Notes](http://u3d.as/7Lz)  
  - 敵  
   - [3D Voxel Cube Spaceships Sampler](http://u3d.as/w1e)  
