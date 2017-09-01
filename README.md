@@ -23,12 +23,12 @@
    
 ### BGM・効果音  
  - [魔王魂](http://maoudamashii.jokersounds.com/)より  
-    - タイトル　　　　[Forever Truth](http://maoudamashii.jokersounds.com/archives/song_17_forever_truth.html)  
+    - タイトル　　　　[Forever Truth](http://maoudamashii.jokersounds.com/archives/song_17_forever_truth.html)  
     - ゲーム中　　　　[空の記憶](http://maoudamashii.jokersounds.com/archives/song_18_karano_kioku.html)  
     - クリア　　　　　[ジングル04](http://maoudamashii.jokersounds.com/archives/se_maoudamashii_jingle04.html)  
     - ゲームオーバー　[ピアノ39](http://maoudamashii.jokersounds.com/archives/bgm_maoudamashii_piano39.html)  
  - [効果音ラボ](http://soundeffect-lab.info/)より  
-    - 時代劇演出１  
+    - 時代劇演出１  
     - 回復魔法２  
 ### ライセンス
  - アセットストアの"Query-Chan" modelからゴーストを使用したのでライセンスロゴを掲載します。  
