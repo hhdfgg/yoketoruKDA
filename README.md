@@ -34,8 +34,8 @@
     - クリア         [ジングル04](http://maoudamashii.jokersounds.com/archives/se_maoudamashii_jingle04.html)  
     - ゲームオーバー  [ピアノ39](http://maoudamashii.jokersounds.com/archives/bgm_maoudamashii_piano39.html)  
  - [効果音ラボ](http://soundeffect-lab.info/)  
-    - 時代劇演出１  
-    - 回復魔法２  
+    - 時代劇演出１  
+    - 回復魔法２  
  
  
  
