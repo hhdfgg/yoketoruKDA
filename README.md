@@ -40,11 +40,11 @@
     1. シーン(Description)を新しく追加して、CanvasをTitleからコピー。  
     2. CanvasにTextで説明を追加。  
     3. TitleManagerに以下のプログラム追加
-    ```c
+ ```c
     		if (Input.GetKeyDown (KeyCode.E)) {
 			SceneManager.LoadSceneAsync ("Description");
 		}
-    ``` 
+``` 
 
  - 面白いことが出来た、GameシーンでPlayerを動かすと背景のアセット(3Dモデル)も動くようになった。
    なぜなら、PlayerのスクリプトにはPlayerオブジェクトをマウスの位置に置き換えるスクリプトが入っているから、
