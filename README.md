@@ -39,12 +39,13 @@
  - タイトルにＥキーでの説明を追加  
     1. シーン(Description)を新しく追加して、CanvasをTitleからコピー。  
     2. CanvasにTextで説明を追加。  
-    3. TitleManagerに```c
+    3. TitleManagerに
+    ```c
     		if (Input.GetKeyDown (KeyCode.E)) {
 			SceneManager.LoadSceneAsync ("Description");
 		}
- ``` 
- 追加
+ ``` 追加
+
  - 面白いことが出来た、GameシーンでPlayerを動かすと背景のアセット(3Dモデル)も動くようになった。
    なぜなら、PlayerのスクリプトにはPlayerオブジェクトをマウスの位置に置き換えるスクリプトが入っているから、
    Playerの子にすることにより、背景のアセット(3Dモデル)も一緒に動く！！！
