@@ -35,10 +35,16 @@
     - [クエリちゃん公式サイト](http://query-chan.com/)より  
 ![](http://query-chan.com/wp-content/uploads/2016/08/02_%E3%82%AF%E3%82%A8%E3%83%AA%E3%81%A1%E3%82%83%E3%82%93%E3%83%A9%E3%82%A4%E3%82%BB%E3%83%B3%E3%82%B9%E3%83%AD%E3%82%B4-e1472646888241-300x256.png)  
  
-## 工夫した点
- 
- 
- 
+## 追加した点
+ - タイトルにＥキーでの説明を追加  
+    1. シーン(Description)を新しく追加して、CanvasをTitleからコピー。  
+    2. CanvasにTextで説明を追加。  
+    3. TitleManagerに```c
+    		if (Input.GetKeyDown (KeyCode.E)) {
+			SceneManager.LoadSceneAsync ("Description");
+		}
+ ``` 
+ 追加
  - 面白いことが出来た、GameシーンでPlayerを動かすと背景のアセット(3Dモデル)も動くようになった。
    なぜなら、PlayerのスクリプトにはPlayerオブジェクトをマウスの位置に置き換えるスクリプトが入っているから、
    Playerの子にすることにより、背景のアセット(3Dモデル)も一緒に動く！！！
