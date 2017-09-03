@@ -51,6 +51,38 @@
 			SceneManager.LoadSceneAsync ("Description");
 		}
 ```
+ - GameシーンにPlayer2を追加
+  1. Player2の操作をＷ・Ａ・Ｓ・Ｄで出来るようにした。
+```c
+		if (Input.GetKey(KeyCode.W)){
+			transform.position += new Vector3 (0f, MAX_SPEED * Time.deltaTime, 0f);
+		}
+
+		if (Input.GetKey(KeyCode.A)){
+			transform.position += new Vector3 (-(MAX_SPEED * Time.deltaTime), 0f, 0f);
+		}
+
+		if (Input.GetKey(KeyCode.S)){
+			transform.position += new Vector3 (0f, -(MAX_SPEED * Time.deltaTime), 0f);
+		}
+
+		if (Input.GetKey(KeyCode.D)){
+			transform.position += new Vector3 (MAX_SPEED * Time.deltaTime, 0f, 0f);
+		}
+
+```
+  2. Player2が画面外に出ないようにした。(Playerだとマウスの位置を取得しているので、new Vector3に変えて値を制限した)
+```c
+		transform.position =(new Vector3 (
+			Mathf.Clamp(transform.position.x, MoveBounds.min.x, MoveBounds.max.x),
+			Mathf.Clamp(transform.position.y, MoveBounds.min.y, MoveBounds.max.y),
+			transform.position.z)
+		);
+```
+ - アイテムをもう一つ追加(同じ色で分かりにくいですが、音符の形が違います。)
+   1. BallをコピーしてBall2を作成(BallとBall2の子にそれぞれ違うPrefabを追加)  
+   2. BallSpawnerもコピーし、Ball2Spawnerを作成。Prefabを変えた。
+
  - 面白いことが出来た、GameシーンでPlayerを動かすと背景のアセット(3Dモデル)も動くようになった。
    なぜなら、PlayerのスクリプトにはPlayerオブジェクトをマウスの位置に置き換えるスクリプトが入っているから、
    Playerの子にすることにより、背景のアセット(3Dモデル)も一緒に動く！！！
