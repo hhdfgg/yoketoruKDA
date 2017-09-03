@@ -45,7 +45,7 @@
 			SceneManager.LoadSceneAsync ("Title");
 		}
 ```
-    4. TitleManagerにもシーン切り替えのプログラム追加
+ 4. TitleManagerにもシーン切り替えのプログラム追加
 ```c
 		if (Input.GetKeyDown (KeyCode.E)) {
 			SceneManager.LoadSceneAsync ("Description");
@@ -71,7 +71,7 @@
 		}
 
 ```  
-    2. Player2が画面外に出ないようにした。(Playerだとマウスの位置を取得しているので、new Vector3に変えて値を制限した)  
+ 2. Player2が画面外に出ないようにした。(Playerだとマウスの位置を取得しているので、new Vector3に変えて値を制限した)  
 ```c
 		transform.position =(new Vector3 (
 			Mathf.Clamp(transform.position.x, MoveBounds.min.x, MoveBounds.max.x),
