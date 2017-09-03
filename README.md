@@ -37,7 +37,7 @@
  
 ## 追加した点
  - タイトルにＥキーでの説明を追加  
-   1. シーン(Description)を新しく追加して、CanvasをTitleからコピー。  
+    1. シーン(Description)を新しく追加して、CanvasをTitleからコピー。  
    2. CanvasにTextで説明を追加。  
    3. DescriptionにDescriptionManagerを設定し以下のプログラム追加
 ```c
