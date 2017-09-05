@@ -26,7 +26,8 @@
     - タイトル　　　　[Forever Truth](http://maoudamashii.jokersounds.com/archives/song_17_forever_truth.html)  
     - ゲーム中　　　　[空の記憶](http://maoudamashii.jokersounds.com/archives/song_18_karano_kioku.html)  
     - クリア　　　　　[ジングル04](http://maoudamashii.jokersounds.com/archives/se_maoudamashii_jingle04.html)  
-    - ゲームオーバー　[ピアノ39](http://maoudamashii.jokersounds.com/archives/bgm_maoudamashii_piano39.html)  
+    - ゲームオーバー　[ピアノ39](http://maoudamashii.jokersounds.com/archives/bgm_maoudamashii_piano39.html)  
+    - 説明画面　　　　[時の彼方へ](http://maoudamashii.jokersounds.com/archives/song_12_tokino_kanatahe.html)  
  - [効果音ラボ](http://soundeffect-lab.info/)より
     - 時代劇演出１  
     - 回復魔法２  
@@ -43,31 +44,7 @@
 ```c
 		if (Input.GetKeyDown (KeyCode.E)) {
 			SceneManager.LoadSceneAsync ("Title");
-		}
-```
- 4. TitleManagerにもシーン切り替えのプログラム追加
-```c
-		if (Input.GetKeyDown (KeyCode.E)) {
-			SceneManager.LoadSceneAsync ("Description");
-		}
-```
- - GameシーンにPlayer2を追加  
-  1. Player2の操作をＷ・Ａ・Ｓ・Ｄで出来るようにした。
-```c
-		if (Input.GetKey(KeyCode.W)){
-			transform.position += new Vector3 (0f, MAX_SPEED * Time.deltaTime, 0f);
-		}
-
-		if (Input.GetKey(KeyCode.A)){
-			transform.position += new Vector3 (-(MAX_SPEED * Time.deltaTime), 0f, 0f);
-		}
-
-		if (Input.GetKey(KeyCode.S)){
-			transform.position += new Vector3 (0f, -(MAX_SPEED * Time.deltaTime), 0f);
-		}
-
-		if (Input.GetKey(KeyCode.D)){
-			transform.position += new Vector3 (MAX_SPEED * Time.deltaTime, 0f, 0f);
+		}Stransform.position += new Vector3 (MAX_SPEED * Time.deltaTime, 0f, 0f);
 		}
 
 ```  
@@ -82,15 +59,40 @@
  - アイテムをもう一つ追加(同じ色で分かりにくいですが、音符の形が違います。)  
    1. BallをコピーしてBall2を作成(BallとBall2の子にそれぞれ違うPrefabを追加)  
    2. BallSpawnerもコピーし、Ball2Spawnerを作成。Prefabを変えた。 
+   
+ - 難易度の設定  
+   1. タイトル画面で１・２・３キーを押すことで選択できるようにした。  
+```c
+		// 1が押されたら、Game1シーンに切り替え
+		if (Input.GetKeyDown (KeyCode.Alpha1)||Input.GetKeyDown (KeyCode.Keypad1)) {
+			SceneManager.LoadSceneAsync ("Game1");
+		}
+
+		// 2が押されたら、Gameシーンに切り替え
+		else if (Input.GetKeyDown (KeyCode.Alpha2)||Input.GetKeyDown (KeyCode.Keypad2)) {
+			SceneManager.LoadSceneAsync ("Game");
+		}
+
+		// 3が押されたら、Game2シーンに切り替え
+		else if (Input.GetKeyDown (KeyCode.Alpha3)||Input.GetKeyDown (KeyCode.Keypad3)) {
+			SceneManager.LoadSceneAsync ("Game2");
+		}
+```
+   2. CanvasにText追加  
 
  - Gameシーンでの背景のこと  
-   - 背景をPlayerの子に設定することによって、画面が小さいので少しではあるがマウスを動かすことにより、背景も一緒に動くことが確認できた。  
+    - 背景をPlayerの子に設定することによって、画面が小さいので少しではあるがマウスを動かすことにより、背景も一緒に動くことが確認できた。  
      当たり前のことだけど、最初にそうなったときは驚いた。
 
-## 考えたり、出来なかった点
- - 考えた点  
-   - Player2が画面から出ないようするために、色々なサイトを見て、試して、ダメで、と繰り返して理解した。
-   
- - 出来なかった点  
-   - アイテムをもう一つ追加したが、取得した時のScoreを変えることが出来なかった。MoveBallをコピーしてMoveBall2を作成してみたが、Ballcountのプログラムがどこでどう動いているか理解できずに、片方だけ全部取ったらClearと出てしまい諦めました。
+## 悩んだ所とやりたかったこと  
+ - 悩んだ所  
+    - Player2が画面から出ないようすること  
+Playerはマウスの位置を取得していて、プログラムをそのまま使うことはできなかったので、色々なサイトを調べてがそのサイト古かったりしてエラーでたりしたので、かなり考えて試行錯誤してやっと出来た。
+   
+ - やりたかったこと  
+    - アイテムをもう一つ追加して、取得した時のScoreを変えること。しかし、MoveBallをコピーしてMoveBall2を作成してみたが、Ballcountのプログラムがどこでどう動いているか理解できずに、片方だけ全部取ったらClearと出てしまい諦めました。  
+    - タイトル画面でTextの"キーを押してスタート！"を点滅させたかった。  
 
+## 確認できているバグ  
+ - タイトルでキーを同時に押すと、押された順にシーンがすぐに切り替わってしまうこと。(解決策が分からなかった)  
+  
