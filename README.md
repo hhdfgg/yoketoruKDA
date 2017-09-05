@@ -44,31 +44,7 @@
 ```c
 		if (Input.GetKeyDown (KeyCode.E)) {
 			SceneManager.LoadSceneAsync ("Title");
-		}
-```
- 4. TitleManagerにもシーン切り替えのプログラム追加
-```c
-		if (Input.GetKeyDown (KeyCode.E)) {
-			SceneManager.LoadSceneAsync ("Description");
-		}
-```
- - GameシーンにPlayer2を追加  
-  1. Player2の操作をＷ・Ａ・Ｓ・Ｄで出来るようにした。
-```c
-		if (Input.GetKey(KeyCode.W)){
-			transform.position += new Vector3 (0f, MAX_SPEED * Time.deltaTime, 0f);
-		}
-
-		if (Input.GetKey(KeyCode.A)){
-			transform.position += new Vector3 (-(MAX_SPEED * Time.deltaTime), 0f, 0f);
-		}
-
-		if (Input.GetKey(KeyCode.S)){
-			transform.position += new Vector3 (0f, -(MAX_SPEED * Time.deltaTime), 0f);
-		}
-
-		if (Input.GetKey(KeyCode.D)){
-			transform.position += new Vector3 (MAX_SPEED * Time.deltaTime, 0f, 0f);
+		}Stransform.position += new Vector3 (MAX_SPEED * Time.deltaTime, 0f, 0f);
 		}
 
 ```  
@@ -109,10 +85,14 @@
      当たり前のことだけど、最初にそうなったときは驚いた。
 
 ## 悩んだ所とやりたかったこと  
-- Player2が画面から出ないようすること  
+ - 悩んだ所  
+    - Player2が画面から出ないようすること  
 Playerはマウスの位置を取得していて、プログラムをそのまま使うことはできなかったので、色々なサイトを調べてがそのサイト古かったりしてエラーでたりしたので、かなり考えて試行錯誤してやっと出来た。
    
  - やりたかったこと  
     - アイテムをもう一つ追加して、取得した時のScoreを変えること。しかし、MoveBallをコピーしてMoveBall2を作成してみたが、Ballcountのプログラムがどこでどう動いているか理解できずに、片方だけ全部取ったらClearと出てしまい諦めました。  
-    - タイトル画面でTextの"キーを押してスタート！"を点滅させたかった。
+    - タイトル画面でTextの"キーを押してスタート！"を点滅させたかった。  
+     
+## 確認できているバグ  
+ - タイトルでキーを同時に押すと、押された順にシーンがすぐに切り替わってしまうこと。(解決策が分からなかった)  
   
