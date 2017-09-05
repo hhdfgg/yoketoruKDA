@@ -5,7 +5,7 @@ using UnityEngine;
 public class Player2 : MonoBehaviour {
 	public float MAX_SPEED = 6f;
 	public Bounds MoveBounds;
-	private Rigidbody rig;
+	public Rigidbody rig;
 
 
 	void OnDrawGizmos(){

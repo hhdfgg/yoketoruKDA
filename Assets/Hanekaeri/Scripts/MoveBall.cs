@@ -8,7 +8,7 @@ public class MoveBall : MonoBehaviour {
 
 	public float vx = -10f;
 	public float vy = -10f;
-	private Rigidbody rig;
+	public Rigidbody rig;
 
 	public float MIN_X = -9f;
 	public float MAX_X = 9f;

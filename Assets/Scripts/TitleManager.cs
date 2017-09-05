@@ -21,19 +21,34 @@ public class TitleManager : MonoBehaviour {
 	void Update () {
 
 		// タイトルクリック時
-		if(Input.GetMouseButtonDown(0)) {
+		if(Input.GetKeyDown (KeyCode.Alpha1)
+			|| Input.GetKeyDown (KeyCode.Alpha2)
+			|| Input.GetKeyDown (KeyCode.Alpha3)
+			|| Input.GetKeyDown (KeyCode.Keypad1)
+			|| Input.GetKeyDown (KeyCode.Keypad2)
+			|| Input.GetKeyDown (KeyCode.Keypad3)){
 			GetComponent<AudioSource> ().PlayOneShot (se);
 		}
 
-		// fire1キーが押されたら、Gameシーンに切り替え
-		if (Input.GetButtonDown ("Fire1")) {
+		// 1が押されたら、Game1シーンに切り替え
+		if (Input.GetKeyDown (KeyCode.Alpha1)||Input.GetKeyDown (KeyCode.Keypad1)) {
+			SceneManager.LoadSceneAsync ("Game1");
+		}
+
+		// 2が押されたら、Gameシーンに切り替え
+		else if (Input.GetKeyDown (KeyCode.Alpha2)||Input.GetKeyDown (KeyCode.Keypad2)) {
 			SceneManager.LoadSceneAsync ("Game");
 		}
 
-		if (Input.GetKeyDown (KeyCode.E)) {
-			SceneManager.LoadSceneAsync ("Description");
+		// 3が押されたら、Game2シーンに切り替え
+		else if (Input.GetKeyDown (KeyCode.Alpha3)||Input.GetKeyDown (KeyCode.Keypad3)) {
+			SceneManager.LoadSceneAsync ("Game2");
 		}
 
-
+		// Eが押されたら、説明シーンに切り替え
+		else if (Input.GetKeyDown (KeyCode.E)) {
+			SceneManager.LoadSceneAsync ("Description");
+		}
 	}
 }
+	
