@@ -27,7 +27,7 @@
     - ゲーム中　　　　[空の記憶](http://maoudamashii.jokersounds.com/archives/song_18_karano_kioku.html)  
     - クリア　　　　　[ジングル04](http://maoudamashii.jokersounds.com/archives/se_maoudamashii_jingle04.html)  
     - ゲームオーバー　[ピアノ39](http://maoudamashii.jokersounds.com/archives/bgm_maoudamashii_piano39.html)  
-    - 説明画面　　　   [時の彼方へ](http://maoudamashii.jokersounds.com/archives/song_12_tokino_kanatahe.html)  
+    - 説明画面　　　　[時の彼方へ](http://maoudamashii.jokersounds.com/archives/song_12_tokino_kanatahe.html)  
  - [効果音ラボ](http://soundeffect-lab.info/)より
     - 時代劇演出１  
     - 回復魔法２  
