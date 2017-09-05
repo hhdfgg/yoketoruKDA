@@ -83,15 +83,36 @@
  - アイテムをもう一つ追加(同じ色で分かりにくいですが、音符の形が違います。)  
    1. BallをコピーしてBall2を作成(BallとBall2の子にそれぞれ違うPrefabを追加)  
    2. BallSpawnerもコピーし、Ball2Spawnerを作成。Prefabを変えた。 
+   
+ - 難易度の設定  
+   1. タイトル画面で１・２・３キーを押すことで選択できるようにした。  
+```c
+		// 1が押されたら、Game1シーンに切り替え
+		if (Input.GetKeyDown (KeyCode.Alpha1)||Input.GetKeyDown (KeyCode.Keypad1)) {
+			SceneManager.LoadSceneAsync ("Game1");
+		}
+
+		// 2が押されたら、Gameシーンに切り替え
+		else if (Input.GetKeyDown (KeyCode.Alpha2)||Input.GetKeyDown (KeyCode.Keypad2)) {
+			SceneManager.LoadSceneAsync ("Game");
+		}
+
+		// 3が押されたら、Game2シーンに切り替え
+		else if (Input.GetKeyDown (KeyCode.Alpha3)||Input.GetKeyDown (KeyCode.Keypad3)) {
+			SceneManager.LoadSceneAsync ("Game2");
+		}
+```
+   2. CanvasにText追加  
 
  - Gameシーンでの背景のこと  
     - 背景をPlayerの子に設定することによって、画面が小さいので少しではあるがマウスを動かすことにより、背景も一緒に動くことが確認できた。  
      当たり前のことだけど、最初にそうなったときは驚いた。
 
 ## 悩んだ所とやりたかったこと  
-    - Player2が画面から出ないようすること  
+- Player2が画面から出ないようすること  
 Playerはマウスの位置を取得していて、プログラムをそのまま使うことはできなかったので、色々なサイトを調べてがそのサイト古かったりしてエラーでたりしたので、かなり考えて試行錯誤して、やっと出来た。
    
  - やりたかったこと  
-    - アイテムをもう一つ追加して、取得した時のScoreを変えること。しかし、MoveBallをコピーしてMoveBall2を作成してみたが、Ballcountのプログラムがどこでどう動いているか理解できずに、片方だけ全部取ったらClearと出てしまい諦めました。  
-    - ステージを作りレベルを変えたかった。
+    - アイテムをもう一つ追加して、取得した時のScoreを変えること。しかし、MoveBallをコピーしてMoveBall2を作成してみたが、Ballcountのプログラムがどこでどう動いているか理解できずに、片方だけ全部取ったらClearと出てしまい諦めました。  
+    - タイトル画面でTextの"キーを押してスタート！"を点滅させたかった。
+  
