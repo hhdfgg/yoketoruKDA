@@ -85,8 +85,8 @@ if (Input.GetKey(KeyCode.D)){
 		);
 ```
 
- - アイテムをもう一つ追加(同じ色で分かりにくいですが、音符の形が違います。)  
-   - BallをコピーしてBall2を作成(BallとBall2の子にそれぞれ違うPrefabを追加)  
+ - アイテムをもう一つ追加(同じ色で分かりにくいですが、音符の形が違います。)
+   - BallをコピーしてBall2を作成(BallとBall2の子にそれぞれ違うPrefabを追加)
    - BallSpawnerもコピーし、Ball2Spawnerを作成。Prefabを変えた。
 
  - 難易度の設定
