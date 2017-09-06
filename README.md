@@ -41,9 +41,9 @@
 
 ## 追加した点
  - タイトルにＥキーでの説明を追加  
-      1. シーン(Description)を新しく追加して、CanvasをTitleからコピー。
-      1. CanvasにTextで説明を追加。
-      1. DescriptionにDescriptionManagerを設定し以下のプログラム追加
+  - シーン(Description)を新しく追加して、CanvasをTitleからコピー。
+  - CanvasにTextで説明を追加。
+  - DescriptionにDescriptionManagerを設定し以下のプログラム追加
 
 ```cs
 		if (Input.GetKeyDown (KeyCode.E)) {
@@ -53,7 +53,7 @@
 ```
 
 
-   1. Player2が画面外に出ないようにした。(Playerだとマウスの位置を取得しているので、new Vector3に変えて値を制限した)
+  - Player2が画面外に出ないようにした。(Playerだとマウスの位置を取得しているので、new Vector3に変えて値を制限した)
 
 
 ```cs
