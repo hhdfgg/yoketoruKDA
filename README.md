@@ -41,9 +41,9 @@
 
 ## 追加した点
  - タイトルにＥキーでの説明を追加  
-  - シーン(Description)を新しく追加して、CanvasをTitleからコピー。
-  - CanvasにTextで説明を追加。
-  - DescriptionにDescriptionManagerを設定し以下のプログラム追加
+    - シーン(Description)を新しく追加して、CanvasをTitleからコピー。
+    - CanvasにTextで説明を追加。
+    - DescriptionにDescriptionManagerを設定し以下のプログラム追加
 
 ```cs
 		if (Input.GetKeyDown (KeyCode.E)) {
@@ -53,7 +53,7 @@
 ```
 
 
-  - Player2が画面外に出ないようにした。(Playerだとマウスの位置を取得しているので、new Vector3に変えて値を制限した)
+   - Player2が画面外に出ないようにした。(Playerだとマウスの位置を取得しているので、new Vector3に変えて値を制限した)
 
 
 ```cs
@@ -69,7 +69,7 @@
    - BallSpawnerもコピーし、Ball2Spawnerを作成。Prefabを変えた。
 
  - 難易度の設定
-  - タイトル画面で１・２・３キーを押すことで選択できるようにした。そしてCanvasにText追加  
+    - タイトル画面で１・２・３キーを押すことで選択できるようにした。そしてCanvasにText追加  
 
 ```cs
 		// 1が押されたら、Game1シーンに切り替え
