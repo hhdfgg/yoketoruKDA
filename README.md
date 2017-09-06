@@ -41,9 +41,9 @@
 
 ## 追加した点
  - タイトルにＥキーでの説明を追加  
-    1. シーン(Description)を新しく追加して、CanvasをTitleからコピー。  
-    1. CanvasにTextで説明を追加。  
-    1. DescriptionにDescriptionManagerを設定し以下のプログラム追加
+      1. シーン(Description)を新しく追加して、CanvasをTitleからコピー。
+      1. CanvasにTextで説明を追加。
+      1. DescriptionにDescriptionManagerを設定し以下のプログラム追加
 
 ```cs
 		if (Input.GetKeyDown (KeyCode.E)) {
@@ -52,7 +52,9 @@
 
 ```
 
-    -  Player2が画面外に出ないようにした。(Playerだとマウスの位置を取得しているので、new Vector3に変えて値を制限した)  
+
+    - Player2が画面外に出ないようにした。(Playerだとマウスの位置を取得しているので、new Vector3に変えて値を制限した)
+
 
 ```cs
 		transform.position =(new Vector3 (
@@ -63,10 +65,10 @@
 ```
 
  - アイテムをもう一つ追加(同じ色で分かりにくいですが、音符の形が違います。)  
-  -  BallをコピーしてBall2を作成(BallとBall2の子にそれぞれ違うPrefabを追加)  
-  -  BallSpawnerもコピーし、Ball2Spawnerを作成。Prefabを変えた。
+  - BallをコピーしてBall2を作成(BallとBall2の子にそれぞれ違うPrefabを追加)  
+  - BallSpawnerもコピーし、Ball2Spawnerを作成。Prefabを変えた。
 
- - 難易度の設定  
+ - 難易度の設定
   - タイトル画面で１・２・３キーを押すことで選択できるようにした。そしてCanvasにText追加  
 
 ```cs
@@ -92,11 +94,11 @@
      当たり前のことだけど、最初にそうなったときは驚いた。
 
 ## 悩んだ所とやりたかったこと  
-###### 悩んだ所  
+##### 悩んだ所  
    - Player2が画面から出ないようすること  
 Playerはマウスの位置を取得していて、プログラムをそのまま使うことはできなかったので、色々なサイトを調べてがそのサイト古かったりしてエラーでたりしたので、かなり考えて試行錯誤してやっと出来た。  
   
-###### やりたかったこと  
+##### やりたかったこと  
    - アイテムをもう一つ追加して、取得した時のScoreを変えること。しかし、MoveBallをコピーしてMoveBall2を作成してみたが、Ballcountのプログラムがどこでどう動いているか理解できずに、片方だけ全部取ったらClearと出てしまい諦めました。  
    - タイトル画面でTextの"キーを押してスタート！"を点滅させたかった。  
 
