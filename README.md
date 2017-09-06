@@ -51,16 +51,30 @@
 		}
 
 ```
+
 - Player2を追加
+    - PlayerをコピーしてPlayer2を作成。
+    - Player2の子にアセットのパンプキンを追加
+    - Player2をＷ・Ａ・Ｓ・Ｄで移動するようにした。
+    - Player2が画面外に出ないようにした。(Playerだとマウスの位置を取得しているので、new Vector3に変えて値を制限した)
 
-<<<<<<< HEAD
-=======
+```cs
+if (Input.GetKey(KeyCode.W)){
+  transform.position += new Vector3 (0f, MAX_SPEED * Time.deltaTime, 0f);
+}
 
-<<<<<<< HEAD
->>>>>>> 1bd8f14244a808aee75169a2a71bd26ca96146f3
-=======
->>>>>>> 1bd8f14244a808aee75169a2a71bd26ca96146f3
- - Player2が画面外に出ないようにした。(Playerだとマウスの位置を取得しているので、new Vector3に変えて値を制限した)
+if (Input.GetKey(KeyCode.A)){
+  transform.position += new Vector3 (-(MAX_SPEED * Time.deltaTime), 0f, 0f);
+}
+
+if (Input.GetKey(KeyCode.S)){
+  transform.position += new Vector3 (0f, -(MAX_SPEED * Time.deltaTime), 0f);
+}
+
+if (Input.GetKey(KeyCode.D)){
+  transform.position += new Vector3 (MAX_SPEED * Time.deltaTime, 0f, 0f);
+}
+```
 
 
 ```cs
@@ -76,7 +90,9 @@
    - BallSpawnerもコピーし、Ball2Spawnerを作成。Prefabを変えた。
 
  - 難易度の設定
-    - タイトル画面で１・２・３キーを押すことで選択できるようにした。そしてCanvasにText追加  
+    - タイトル画面で１・２・３キーを押すことで選択できるようにした。(1で簡単、2で普通、3で難しい)  
+    そしてCanvasにText追加
+        - Game1、Game2のシーンを新しく追加し、Gameから中身をコピーし、Spawnerで敵とボールの数と速さを調節。
 
 ```cs
 		// 1が押されたら、Game1シーンに切り替え
@@ -96,10 +112,6 @@
 ```
 
 
-- Gameシーンでの背景のこと  
-    - 背景をPlayerの子に設定することによって、画面が小さいので少しではあるがマウスを動かすことにより、背景も一緒に動くことが確認できた。  
-     当たり前のことだけど、最初にそうなったときは驚いた。
-
 ## 悩んだ所とやりたかったこと  
 ##### 悩んだ所  
    - Player2が画面から出ないようすること  
@@ -110,5 +122,5 @@ Playerはマウスの位置を取得していて、プログラムをそのま�
    - タイトル画面でTextの"キーを押してスタート！"を点滅させたかった。  
 
 ## 確認できているバグ  
- - タイトルでキーを同時に押すと、押された順にシーンがすぐに切り替わってしまうこと。(解決策が分からなかった)  
+ - タイトルでキーを同時に押すと、押された順にシーンがすぐに切り替わってしまうこと。(解決方法が分からなかった)  
   

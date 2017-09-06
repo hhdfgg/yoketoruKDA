@@ -68,7 +68,7 @@ public class MoveBall : MonoBehaviour {
 
 				GameManager.PlaySE (0);
 
-				GameParams.AddScore (5000);
+				GameParams.AddScore (7000);
 
 				Destroy (gameObject);
 
