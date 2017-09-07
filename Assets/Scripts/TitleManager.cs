@@ -36,17 +36,17 @@ public class TitleManager : MonoBehaviour {
 		}
 
 		// 2が押されたら、Gameシーンに切り替え
-		else if (Input.GetKeyDown (KeyCode.Alpha2)||Input.GetKeyDown (KeyCode.Keypad2)) {
+		if (Input.GetKeyDown (KeyCode.Alpha2)||Input.GetKeyDown (KeyCode.Keypad2)) {
 			SceneManager.LoadSceneAsync ("Game");
 		}
 
 		// 3が押されたら、Game2シーンに切り替え
-		else if (Input.GetKeyDown (KeyCode.Alpha3)||Input.GetKeyDown (KeyCode.Keypad3)) {
+		if (Input.GetKeyDown (KeyCode.Alpha3)||Input.GetKeyDown (KeyCode.Keypad3)) {
 			SceneManager.LoadSceneAsync ("Game2");
 		}
 
 		// Eが押されたら、説明シーンに切り替え
-		else if (Input.GetKeyDown (KeyCode.E)) {
+		if (Input.GetKeyDown (KeyCode.E)) {
 			SceneManager.LoadSceneAsync ("Description");
 		}
 	}

@@ -37,7 +37,7 @@
 ## ライセンス
  - アセットストアの"Query-Chan" modelからゴーストを使用したのでライセンスロゴを掲載します。  
     - [クエリちゃん公式サイト](http://query-chan.com/)より  
-![ALT属性](http://query-chan.com/wp-content/uploads/2016/08/02_%E3%82%AF%E3%82%A8%E3%83%AA%E3%81%A1%E3%82%83%E3%82%93%E3%83%A9%E3%82%A4%E3%82%BB%E3%83%B3%E3%82%B9%E3%83%AD%E3%82%B4-e1472646888241-300x256.png)  
+[![ALT属性](http://query-chan.com/wp-content/uploads/2016/08/02_%E3%82%AF%E3%82%A8%E3%83%AA%E3%81%A1%E3%82%83%E3%82%93%E3%83%A9%E3%82%A4%E3%82%BB%E3%83%B3%E3%82%B9%E3%83%AD%E3%82%B4-e1472646888241-300x256.png)](http://query-chan.com/download/)
 
 ## 追加した点
  - タイトルにＥキーでの説明を追加  
@@ -101,12 +101,12 @@ if (Input.GetKey(KeyCode.D)){
 		}
 
 		// 2が押されたら、Gameシーンに切り替え
-		else if (Input.GetKeyDown (KeyCode.Alpha2)||Input.GetKeyDown (KeyCode.Keypad2)) {
+		if (Input.GetKeyDown (KeyCode.Alpha2)||Input.GetKeyDown (KeyCode.Keypad2)) {
 			SceneManager.LoadSceneAsync ("Game");
 		}
 
 		// 3が押されたら、Game2シーンに切り替え
-		else if (Input.GetKeyDown (KeyCode.Alpha3)||Input.GetKeyDown (KeyCode.Keypad3)) {
+		if (Input.GetKeyDown (KeyCode.Alpha3)||Input.GetKeyDown (KeyCode.Keypad3)) {
 			SceneManager.LoadSceneAsync ("Game2");
 		}
 ```
@@ -118,7 +118,7 @@ if (Input.GetKey(KeyCode.D)){
 Playerはマウスの位置を取得していて、プログラムをそのまま使うことはできなかったので、色々なサイトを調べてがそのサイト古かったりしてエラーでたりしたので、かなり考えて試行錯誤してやっと出来た。  
   
 ##### やりたかったこと  
-   - アイテムをもう一つ追加して、取得した時のScoreを変えること。しかし、MoveBallをコピーしてMoveBall2を作成してみたが、Ballcountのプログラムがどこでどう動いているか理解できずに、片方だけ全部取ったらClearと出てしまい諦めました。  
+   - アイテムを追加したときに、取得した時のScoreを変えること。しかし、MoveBallをコピーしてMoveBall2を作成してみたが、Ballcountのプログラムがどこでどう動いているか理解できずに、片方だけ全部取ったらClearと出てしまい諦めました。  
    - タイトル画面でTextの"キーを押してスタート！"を点滅させたかった。  
 
 ## 確認できているバグ  
