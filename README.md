@@ -56,7 +56,7 @@
     - PlayerをコピーしてPlayer2を作成。
     - Player2の子にアセットのパンプキンを追加
     - Player2をＷ・Ａ・Ｓ・Ｄで移動するようにした。
-    - Player2が画面外に出ないようにした。(Playerだとマウスの位置を取得しているので、new Vector3に変えて値を制限した)
+    - Player2が画面外に出ないようにした。(Playerだとマウスの位置を取得しているので、new Vector3だけに変えて値を制限した)
 
 ```cs
 if (Input.GetKey(KeyCode.W)){
