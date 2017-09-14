@@ -1,13 +1,13 @@
 # 音符取り  
 
-講義中に作った "yoketoru" に
+講義中に作った "yoketoru" に  
 要素を追加して作りました。
 
 ---
 
 ### 操作方法
-マウス移動でパンプキンが移動、
-ゴーストはW・A・S・Dで移動します。
+マウス移動でパンプキンが移動、  
+ゴーストはW・A・S・Dで移動します。  
 （Wで上、Aで左、Sで下、Dで右）
 
 ---
@@ -76,10 +76,9 @@
 ---
 
 2. Player2を追加
-- PlayerをコピーしてPlayer2を作成。
-- Player2の子にアセットのパンプキンを追加
-- Player2をＷ・Ａ・Ｓ・Ｄで移動するようにした。
-- Player2が画面外に出ないようにした。(Playerだとマウスの位置を取得しているので、new Vector3だけに変えて値を制限した)
+   - PlayerをコピーしてPlayer2を作成。
+   - Player2をＷ・Ａ・Ｓ・Ｄで移動するようにした。
+   - Player2が画面外に出ないようにした。(Playerだとマウスの位置を取得しているので、new Vector3だけに変えて値を制限した)
 
 ---
 
@@ -100,7 +99,9 @@ if (Input.GetKey(KeyCode.D)){
   transform.position += new Vector3 (MAX_SPEED * Time.deltaTime, 0f, 0f);
 }
 ```
+
 ---
+
 ```cs
 transform.position =(new Vector3 (
 	Mathf.Clamp(transform.position.x, MoveBounds.min.x, MoveBounds.max.x),
@@ -112,16 +113,18 @@ transform.position =(new Vector3 (
 ---
 
 3. アイテムをもう一つ追加 (同じ色で分かりにくいですが、音符の形が違います。)
-- BallをコピーしてBall2を作成(BallとBall2の子にそれぞれ違うPrefabを追加)
-- BallSpawnerもコピーし、Ball2Spawnerを作成。Prefabを変えた。
+   - BallをコピーしてBall2を作成(BallとBall2の子にそれぞれ違うPrefabを追加)
+   - BallSpawnerもコピーし、Ball2Spawnerを作成。Prefabを変えた。
 
  ---
 
 4. 難易度の設定
-- タイトル画面で１・２・３キーを押すことで選択できるようにした。(1で簡単、2で普通、3で難しい)  
+   - タイトル画面で１・２・３キーを押すことで選択できるようにした。(1で簡単、2で普通、3で難しい)  
    そしてCanvasにText追加
-- Game1、Game2のシーンを新しく追加し、Gameから中身をコピーし、Spawnerで敵とボールの数と速さを調節。
+   - Game1、Game2のシーンを新しく追加し、Gameから中身をコピーし、Spawnerで敵とボールの数と速さを調節。
+
 ---
+
 ```cs
 // 1が押されたら、Game1シーンに切り替え
 if (Input.GetKeyDown (KeyCode.Alpha1)||Input.GetKeyDown (KeyCode.Keypad1)) {
