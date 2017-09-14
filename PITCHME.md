@@ -65,11 +65,23 @@
     - シーン(Description)を新しく追加して、CanvasをTitleからコピー。
     - CanvasにTextで説明を追加。
     - DescriptionにDescriptionManagerを設定し以下のプログラム追加
+    - TitleManagerにもプログラムを追加
+
+---
 
 ```cs
-   if (Input.GetKeyDown (KeyCode.E)) {
-     SceneManager.LoadSceneAsync ("Title");
-   }
+// Eが押されたら、Titleシーンに切り替え
+if (Input.GetKeyDown (KeyCode.E)) {
+   SceneManager.LoadSceneAsync ("Title");
+}
+
+```
+
+```cs
+// Eが押されたら、説明シーンに切り替え
+if (Input.GetKeyDown (KeyCode.E)) {
+	SceneManager.LoadSceneAsync ("Description");
+}
 
 ```
 
@@ -147,14 +159,16 @@ if (Input.GetKeyDown (KeyCode.Alpha3)||Input.GetKeyDown (KeyCode.Keypad3)) {
 
 ### 悩んだ所ともっとやりたかったこと  
 ###### 悩んだ所  
-   - Player2が画面から出ないようすること  
+    - Player2が画面から出ないようすること  
 Playerはマウスの位置を取得していて、プログラムをそのまま使うことはできなかったので、色々なサイトを調べてがそのサイト古かったりしてエラーでたりしたので、かなり考えて試行錯誤してやっと出来た。  
 
 ---
 
 ###### もっとやりたかったこと  
    - アイテムを追加したときに、取得した時のScoreを変えること。しかし、MoveBallをコピーしてMoveBall2を作成してみたが、Ballcountのプログラムがどこでどう動いているか理解できずに、片方だけ全部取ったらClearと出てしまい諦めました。  
-   - タイトル画面でTextの"キーを押してスタート！"を点滅させたかった。  
+   - タイトル画面でTextの"キーを押してスタート！"を点滅させたかった。
+    - 結局、自分の能力不足で全然出来なかった。  
+      そして、メモすることがとても大切だとわかりました。
 
 ---
 
