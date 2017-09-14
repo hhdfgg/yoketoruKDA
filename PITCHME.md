@@ -61,10 +61,10 @@
 
 ### 追加した点
 
-1. タイトルにＥキーでの説明を追加  
-   - シーン(Description)を新しく追加して、CanvasをTitleからコピー。
-   - CanvasにTextで説明を追加。
-   - DescriptionにDescriptionManagerを設定し以下のプログラム追加
+- タイトルにＥキーでの説明を追加  
+    - シーン(Description)を新しく追加して、CanvasをTitleからコピー。
+    - CanvasにTextで説明を追加。
+    - DescriptionにDescriptionManagerを設定し以下のプログラム追加
 
 ```cs
    if (Input.GetKeyDown (KeyCode.E)) {
@@ -75,10 +75,10 @@
 
 ---
 
-2. Player2を追加
-   - PlayerをコピーしてPlayer2を作成。
-   - Player2をＷ・Ａ・Ｓ・Ｄで移動するようにした。
-   - Player2が画面外に出ないようにした。(Playerだとマウスの位置を取得しているので、new Vector3だけに変えて値を制限した)
+- Player2を追加
+    - PlayerをコピーしてPlayer2を作成。
+    - Player2をＷ・Ａ・Ｓ・Ｄで移動するようにした。
+    - Player2が画面外に出ないようにした。(Playerだとマウスの位置を取得しているので、new Vector3だけに変えて値を制限した)
 
 ---
 
@@ -112,16 +112,16 @@ transform.position =(new Vector3 (
 
 ---
 
-3. アイテムをもう一つ追加 (同じ色で分かりにくいですが、音符の形が違います。)
-   - BallをコピーしてBall2を作成(BallとBall2の子にそれぞれ違うPrefabを追加)
-   - BallSpawnerもコピーし、Ball2Spawnerを作成。Prefabを変えた。
+- アイテムをもう一つ追加 (同じ色で分かりにくいですが、音符の形が違います。)
+    - BallをコピーしてBall2を作成(BallとBall2の子にそれぞれ違うPrefabを追加)
+    - BallSpawnerもコピーし、Ball2Spawnerを作成。Prefabを変えた。
 
- ---
+---
 
-4. 難易度の設定
-   - タイトル画面で１・２・３キーを押すことで選択できるようにした。(1で簡単、2で普通、3で難しい)  
+- 難易度の設定
+    - タイトル画面で１・２・３キーを押すことで選択できるようにした。(1で簡単、2で普通、3で難しい)  
    そしてCanvasにText追加
-   - Game1、Game2のシーンを新しく追加し、Gameから中身をコピーし、Spawnerで敵とボールの数と速さを調節。
+    - Game1、Game2のシーンを新しく追加し、Gameから中身をコピーし、Spawnerで敵とボールの数と速さを調節。
 
 ---
 
@@ -149,7 +149,7 @@ if (Input.GetKeyDown (KeyCode.Alpha3)||Input.GetKeyDown (KeyCode.Keypad3)) {
    - Player2が画面から出ないようすること  
 Playerはマウスの位置を取得していて、プログラムをそのまま使うことはできなかったので、色々なサイトを調べてがそのサイト古かったりしてエラーでたりしたので、かなり考えて試行錯誤してやっと出来た。  
 
- ---
+---
 
 ###### やりたかったこと  
    - アイテムを追加したときに、取得した時のScoreを変えること。しかし、MoveBallをコピーしてMoveBall2を作成してみたが、Ballcountのプログラムがどこでどう動いているか理解できずに、片方だけ全部取ったらClearと出てしまい諦めました。  
